@@ -28,3 +28,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+#python3 pokedex2.py charmander bulbasaur pikachu squirtle jigglypuff meowth
