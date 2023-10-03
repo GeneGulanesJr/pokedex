@@ -10,7 +10,10 @@ def search_pokemon(name):
     moves = ", ".join(move_data["move"]["name"] for move_data in pokemon["moves"])
     held_items = ", ".join(item["item"]["name"] for item in pokemon["held_items"])
     
-    print("Name:", pokemon["name"])
+    # Capitalize the first letter of the name
+    name = name.capitalize()
+    
+    print("Name:", name)
     print("HP:", hp_str)
     print("Attacks:", moves)
     print("Held Items:", held_items)
@@ -25,5 +28,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-# sample line python3 pokedex2.py charmander bulbasaur pikachu squirtle jigglypuff meowth
